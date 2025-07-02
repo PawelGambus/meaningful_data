@@ -3,3 +3,10 @@ Models are just programs. What makes them different is that a program executes a
 Weights are referred to as model parameters. A weight is a subclass of a parameter.
 
 A result of a model is something different than its performance. A result is simply an output. Performance is telling us how good that output is. 
+
+An **Architecture** is a model without weights. An architecture just describes the structure of what is going to be trained. An architecture defines what activation function to use, and how many nodes and layers the model contains.
+
+**Loss** is a measure of **performance**.
+**Predictions** are just the results of the model.
+**Predictions** are calculated from *data*, and this *data* is provided without *labels*. Meaning: The model doesn't know up front what the predition (dependent variable value) should be.
+**Label** is what the model tries to predict. Label is the correct value that we strive to predict with the model. 
