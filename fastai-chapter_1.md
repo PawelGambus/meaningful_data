@@ -6,7 +6,11 @@ A result of a model is something different than its performance. A result is sim
 
 An **Architecture** is a model without weights. An architecture just describes the structure of what is going to be trained. An architecture defines what activation function to use, and how many nodes and layers the model contains.
 
-**Loss** is a measure of **performance**.
+**Loss** is a measure of **performance**. Depends on *predictions* and correct *targets*.
 **Predictions** are just the results of the model.
 **Predictions** are calculated from *data*, and this *data* is provided without *labels*. Meaning: The model doesn't know up front what the predition (dependent variable value) should be.
-**Label** is what the model tries to predict. Label is the correct value that we strive to predict with the model. 
+**Label** is what the model tries to predict. Label is the correct value that we strive to predict with the model. Also called: **target**.
+
+**valid_pct** stands for the fraction of data that will be used for validation, and not for training. 
+Validation set is used to measure the accuracy of the model.
+**seed** is a parameter which determines the choice of the validation set. If we use the same seed, the same validation set will be selected for training.
