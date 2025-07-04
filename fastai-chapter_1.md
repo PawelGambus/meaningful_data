@@ -29,3 +29,15 @@ cnn_learner will remove the last layer and add one or more layers of appropriate
 Using pretrained models is a **commonly overseen method that is the most important to get more accurrate mmodels, more quickly, with less data and less time and money.**
 
 Using a pretrained model for a diffferent task than it was originally trained for is called  **transfer learning**. In 2020 still a big problem cause not many pretrained models+a lot of things that could not be just transferred. 
+
+**fit** vs **fine_tune**: fit (or train)is for new models, fine_tune for pretrained models (we don't want to throuw away the previously learned things). Technically fine_tuning is a transfer learning technique used on a pretrained model.
+
+**epoch** one run through all the items of the training dataset
+
+Contrary to popular belief (and mine also!), it is possible to inspect what is happening withing the neural network (there's a whole branch of research on that).
+
+It might be a good idea to use CNN for different patterns recognition: You can transform your data into an image. And if a human is able to distingush the categories, so should a CNN be able to do a proper classification. Conclusion: be creative with how you represent your data!
+
+**Loss** vs **metric**. Both show how good the model is. Loss is for SGD, a metric is for humans. 
+
+Machine learning: a discipline in which we define a program not by writing it entirely ourselvs but by leaning from data. Deep learning-a subcategory of machine learning which uses neural networks
